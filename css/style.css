@@ -6,7 +6,7 @@
 
 /* Aside Marvel (navbar)*/
 aside.left{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     width: 150px;
     background-color: #e6e6e6;
     float: left;
@@ -73,7 +73,7 @@ h2{
 
 /* Aside right (navbar)*/
 aside.right{
-    height: calc(100vh - 100px);
+    height: calc(100vh - 80px);
     width: 150px;
     float: right;
     background-color:#e6e6e6;
@@ -82,7 +82,7 @@ aside.right{
 /* Main (Navigation)*/
 main{
     width: calc(100vw - 300px);
-    height: calc(100vh - 160px);
+    height: calc(100vh - 140px);
     float: left;
     display: flex;
     flex-direction: row;
@@ -285,13 +285,16 @@ h4{
 /* Footer */
 footer{
     width: 100vw;
-    height: 100px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 80px;
     float:left;
     background-color:#333333;
     color: white;
+}
+
+.flex-container.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 img.copertina{
@@ -302,4 +305,23 @@ img.copertina{
 
 i.fas.fa-heart:hover{
     color: red;
+}
+
+hr.load{
+    width: 300px;
+    border: 3px solid white;
+    animation-name: load 3s infinite;
+}
+
+@keyframes load {
+    from{left: 0px;}
+    to {left: 50%}
+}
+
+{
+    animation-name: volume 3s infinite;
+}
+
+@keyframes volume {
+
 }

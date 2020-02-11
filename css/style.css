@@ -8,7 +8,7 @@
 aside.left{
     height: calc(100vh - 50px);
     width: 150px;
-    background-color: black;
+    background-color: #ededed;
     float: left;
 }
 
@@ -27,28 +27,47 @@ aside.left{
 }
 
 #icon{
-    width:70px;
-    height: 70px;
+    width:40px;
+    height: 40px;
     object-fit: contain;
     margin-bottom: 20px;
 }
 /* Header (Search)*/
 header{
     width: calc(100vw - 300px);
-    height: 100px;
+    height: 60px;
     float: left;
 }
 
 .flex-container.heroflix{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.btn{
+    border: 1px solid black;
+    height: 30px;
+    width: 100px;
+    border-radius: 20px;
+    color: black;
 }
 
 #heroflix{
-    width: 100px;
-    height: 100px;
+    width: 67px;
+    height: 67px;
     object-fit: contain;
+    position: absolute;
+}
+
+h2{
+    font-size: 16px;
+    font-family: 'Bangers', cursive;
+    position: relative;
+    margin-left: 10px;
+    color: red;
 }
 
 /* Aside right (navbar)*/
@@ -56,27 +75,30 @@ aside.right{
     height: calc(100vh - 50px);
     width: 150px;
     float: right;
-    background-color: black;
+    background-color: #ededed;
 }
 
 /* Main (Navigation)*/
 main{
     width: calc(100vw - 300px);
-    height: calc(100vh - 150px);
+    height: calc(100vh - 110px);
     float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: flex-start;
-    background-color: black;
+    background-color: #ededed;
     overflow-y:scroll;
 }
+
+/* All flex-container inside main */
 
 /* Iron-man */
 .flex-container.iron-man{
     display: flex;
     text-align: center;
+    padding: 50px 0 50px;
 }
 
 .image{
@@ -85,46 +107,92 @@ main{
     object-fit: contain;
 }
 
+.iron-man-1,
+.iron-man-2,
+.iron-man-3{
+    position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: white;
+}
+
+.iron-man-1:hover .overlay,
+.iron-man-2:hover .overlay,
+.iron-man-3:hover .overlay {
+  opacity: 0.3;
+  border-radius: 30px;
+}
+
+.icon {
+  color: black;
+  font-size: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.fa-user:hover {
+  color: #eee;
+}
+
 .bk--red:hover{
-    background-image: linear-gradient(to bottom right,  #ff4d4d, #ffff80)
+    /* background-image: linear-gradient(to bottom right,  #ff4d4d, #ffff80) */
 }
 
 /* Thor */
 .flex-container.thor{
     display: flex;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 .bk--grey:hover{
-    background-color: #f1f1f1;
+    /* background-color: #f1f1f1; */
 }
 
 /* Captain America */
 .flex-container.captain-america{
     display: flex;
     text-align: center;
+    padding-bottom:50px;
 }
 
 .bk--blue:hover{
-    background-image: linear-gradient(to bottom right, #66b3ff, white, #ff8080)
+    /* background-image: linear-gradient(to bottom right, #66b3ff, white, #ff8080) */
 }
 
 /* Black Panther */
 .flex-container.black-panther{
     display: flex;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 /* Guardians-of-Galaxy */
 .flex-container.guardians-of-galaxy{
     display: flex;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 /* Avengers */
 .flex-container.avengers{
     display: flex;
     text-align: center;
+    padding-bottom: 50px;
 }
 
 /* Coming-soon */

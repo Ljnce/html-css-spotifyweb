@@ -4,37 +4,136 @@
     box-sizing: border-box;
 }
 
-/* Aside left (navbar)*/
-aside{
-    height: 100vh;
-    width: 200px;
-    border: 1px solid black;
+/* Aside Marvel (navbar)*/
+aside.left{
+    height: calc(100vh - 50px);
+    width: 150px;
+    background-color: black;
     float: left;
 }
 
+.flex-container.marvel,
+.flex-container.dc-comics{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+#icon{
+    width:70px;
+    height: 70px;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
 /* Header (Search)*/
 header{
-    width: calc(100vw - 200px);
-    height: 80px;
-    border: 1px solid black;
-    background: red;
+    width: calc(100vw - 300px);
+    height: 100px;
     float: left;
+}
+
+.flex-container.heroflix{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#heroflix{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+/* Aside right (navbar)*/
+aside.right{
+    height: calc(100vh - 50px);
+    width: 150px;
+    float: right;
+    background-color: black;
 }
 
 /* Main (Navigation)*/
 main{
-    width: calc(100vw - 200px);
-    height: calc(100vh - 80px);
-    border: 1px solid black;
-    background: orange;
+    width: calc(100vw - 300px);
+    height: calc(100vh - 150px);
     float: left;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: black;
+    overflow-y:scroll;
+}
+
+/* Iron-man */
+.flex-container.iron-man{
+    display: flex;
+    text-align: center;
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+}
+
+.bk--red:hover{
+    background-image: linear-gradient(to bottom right,  #ff4d4d, #ffff80)
+}
+
+/* Thor */
+.flex-container.thor{
+    display: flex;
+    text-align: center;
+}
+
+.bk--grey:hover{
+    background-color: #f1f1f1;
+}
+
+/* Captain America */
+.flex-container.captain-america{
+    display: flex;
+    text-align: center;
+}
+
+.bk--blue:hover{
+    background-image: linear-gradient(to bottom right, #66b3ff, white, #ff8080)
+}
+
+/* Black Panther */
+.flex-container.black-panther{
+    display: flex;
+    text-align: center;
+}
+
+/* Guardians-of-Galaxy */
+.flex-container.guardians-of-galaxy{
+    display: flex;
+    text-align: center;
+}
+
+/* Avengers */
+.flex-container.avengers{
+    display: flex;
+    text-align: center;
 }
 
 /* Coming-soon */
-.marvel-studios{
+section.marvel-studios{
     display: flex;
     flex-wrap: wrap;
     background-color: black;
+    width: calc(100vw - 300px);
+    height: 300px;
 }
 
 .top-section{
@@ -43,20 +142,16 @@ main{
     align-items: center;
     width: 100%;
     height: 30%;
+    padding-top: 20px;
 }
 
-#logo img{
+#logo-marvel img{
     width:150px;
 }
 
 .icon-scroll{
     display: flex;
     justify-content: center;
-}
-
-p{
-    font-size: 8px;
-    padding:0;
 }
 
 .coming-soon{
@@ -69,6 +164,11 @@ p{
     overflow-y: auto;
 }
 
+h4{
+    font-family: 'Bangers', cursive;
+    text-align: center;
+}
+
 .coming-soon-image img{
     width: 250px;
     height: 250px;
@@ -77,10 +177,11 @@ p{
 }
 
 
+
 /* Footer */
 footer{
     width: 100vw;
-    height: 100px;
-    border: 1px solid black;
+    height: 50px;
     float:left;
+    background-color: red;
 }

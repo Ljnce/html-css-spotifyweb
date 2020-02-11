@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Aside left (navbar)*/
+aside{
+    height: 100vh;
+    width: 200px;
+    border: 1px solid black;
+    float: left;
+}
+
+/* Header (Search)*/
+header{
+    width: calc(100vw - 200px);
+    height: 80px;
+    border: 1px solid black;
+    background: red;
+    float: left;
+}
+
+/* Main (Navigation)*/
+main{
+    width: calc(100vw - 200px);
+    height: calc(100vh - 80px);
+    border: 1px solid black;
+    background: orange;
+    float: left;
+}
+
+/* Coming-soon */
+.marvel-studios{
+    display: flex;
+    flex-wrap: wrap;
+    background-color: black;
+}
+
+.top-section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 30%;
+}
+
+#logo img{
+    width:150px;
+}
+
+.icon-scroll{
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-size: 8px;
+    padding:0;
+}
+
+.coming-soon{
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 200px;
+    align-items: center;
+    width: 95%;
+    height: 250px;
+    overflow-y: auto;
+}
+
+.coming-soon-image img{
+    width: 250px;
+    height: 250px;
+    object-fit: contain;
+    margin: 0 20px;
+}
+
+
+/* Footer */
+footer{
+    width: 100vw;
+    height: 100px;
+    border: 1px solid black;
+    float:left;
+}

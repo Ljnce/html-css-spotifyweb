@@ -8,7 +8,7 @@
 aside.left{
     height: calc(100vh - 50px);
     width: 150px;
-    background-color: #ededed;
+    background-color: #e6e6e6;
     float: left;
 }
 
@@ -37,6 +37,7 @@ header{
     width: calc(100vw - 300px);
     height: 60px;
     float: left;
+    background-color: #f2f2f2;
 }
 
 .flex-container.heroflix{
@@ -75,7 +76,7 @@ aside.right{
     height: calc(100vh - 50px);
     width: 150px;
     float: right;
-    background-color: #ededed;
+    background-color:#e6e6e6;
 }
 
 /* Main (Navigation)*/
@@ -93,12 +94,22 @@ main{
 }
 
 /* All flex-container inside main */
+.flex-container.iron-man,
+.flex-container.thor,
+.flex-container.captain-america,
+.flex-container.black-panther,
+.flex-container.guardians-of-galaxy,
+.flex-container.avengers{
+    display: flex;
+    text-align: center;
+    padding-bottom: 50px;
+    margin:20px;
+}
 
 /* Iron-man */
 .flex-container.iron-man{
-    display: flex;
-    text-align: center;
     padding: 50px 0 50px;
+    margin:20px;
 }
 
 .image{
@@ -123,13 +134,13 @@ main{
   width: 100%;
   opacity: 0;
   transition: .3s ease;
-  background-color: white;
+  background-color: black;
 }
 
 .iron-man-1:hover .overlay,
 .iron-man-2:hover .overlay,
 .iron-man-3:hover .overlay {
-  opacity: 0.3;
+  opacity: 0.5;
   border-radius: 30px;
 }
 
@@ -153,47 +164,25 @@ main{
 }
 
 /* Thor */
-.flex-container.thor{
-    display: flex;
-    text-align: center;
-    padding-bottom: 50px;
-}
 
 .bk--grey:hover{
     /* background-color: #f1f1f1; */
 }
 
 /* Captain America */
-.flex-container.captain-america{
-    display: flex;
-    text-align: center;
-    padding-bottom:50px;
-}
 
 .bk--blue:hover{
     /* background-image: linear-gradient(to bottom right, #66b3ff, white, #ff8080) */
 }
 
 /* Black Panther */
-.flex-container.black-panther{
-    display: flex;
-    text-align: center;
-    padding-bottom: 50px;
-}
+
 
 /* Guardians-of-Galaxy */
-.flex-container.guardians-of-galaxy{
-    display: flex;
-    text-align: center;
-    padding-bottom: 50px;
-}
+
 
 /* Avengers */
-.flex-container.avengers{
-    display: flex;
-    text-align: center;
-    padding-bottom: 50px;
-}
+
 
 /* Coming-soon */
 section.marvel-studios{
@@ -202,6 +191,7 @@ section.marvel-studios{
     background-color: black;
     width: calc(100vw - 300px);
     height: 300px;
+    border-radius: 20px;
 }
 
 .top-section{
@@ -251,5 +241,5 @@ footer{
     width: 100vw;
     height: 50px;
     float:left;
-    background-color: red;
+    background-color:#333333;
 }

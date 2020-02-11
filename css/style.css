@@ -6,7 +6,7 @@
 
 /* Aside Marvel (navbar)*/
 aside.left{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 100px);
     width: 150px;
     background-color: #e6e6e6;
     float: left;
@@ -73,7 +73,7 @@ h2{
 
 /* Aside right (navbar)*/
 aside.right{
-    height: calc(100vh - 50px);
+    height: calc(100vh - 100px);
     width: 150px;
     float: right;
     background-color:#e6e6e6;
@@ -82,13 +82,13 @@ aside.right{
 /* Main (Navigation)*/
 main{
     width: calc(100vw - 300px);
-    height: calc(100vh - 110px);
+    height: calc(100vh - 160px);
     float: left;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: center;
     background-color: #ededed;
     overflow-y:scroll;
 }
@@ -145,7 +145,7 @@ main{
 }
 
 .icon {
-  color: black;
+  color: white;
   font-size: 100px;
   position: absolute;
   top: 50%;
@@ -190,7 +190,7 @@ section.marvel-studios{
     flex-wrap: wrap;
     background-color: black;
     width: calc(100vw - 300px);
-    height: 300px;
+    height: 370px;
     border-radius: 20px;
 }
 
@@ -234,12 +234,72 @@ h4{
     margin: 0 20px;
 }
 
+/* App */
+.bk--app{
+    display: flex;
+}
+
+.flex-container.app{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin-top:50px;
+    padding-bottom: 30px;
+}
+
+.app{
+    position: relative;
+}
+
+.iphone{
+    height: 250px;
+    width: 250px;
+    object-fit: contain;
+}
+
+.center-phone{
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    position: absolute;
+}
+
+.top-phone{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    position: absolute;
+    top:0px;
+}
+
+.bottom-phone{
+    width: 104px;
+    height: 104px;
+    object-fit: contain;
+    position: absolute;
+    bottom: 30px;
+}
 
 
 /* Footer */
 footer{
     width: 100vw;
-    height: 50px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     float:left;
     background-color:#333333;
+    color: white;
+}
+
+img.copertina{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+i.fas.fa-heart:hover{
+    color: red;
 }

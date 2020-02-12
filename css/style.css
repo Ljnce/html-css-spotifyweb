@@ -382,6 +382,11 @@ img.freccia{
     padding-bottom: 30px;
 }
 
+h3{
+    font-family: 'Bangers', cursive;
+    font-weight: lighter;
+}
+
 .app{
     position: relative;
 }

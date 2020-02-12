@@ -12,11 +12,10 @@ aside.left{
     float: left;
 }
 
-.flex-container.marvel,
-.flex-container.dc-comics{
+.flex-container.marvel{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -24,6 +23,16 @@ aside.left{
     margin-bottom: 20px;
 }
 
+.aside-top{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aside-bottom{
+    display: flex;
+    align-items: flex-end;
+}
 #heroflix{
     width: 67px;
     height: 67px;
@@ -57,9 +66,10 @@ header{
 .flex-container.heroflix{
     display: flex;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: center;
     margin-left: 10px;
     margin-right: 10px;
+    padding-top: 10px;
 }
 
 .btn{
@@ -70,6 +80,16 @@ header{
     color: black;
 }
 
+i.fas.fa-chevron-left:hover,
+i.fas.fa-chevron-right:hover{
+    color: #00e600;
+}
+
+i.fas.fa-chevron-left,
+i.fas.fa-chevron-right{
+    font-size: 20px;
+}
+
 /* Main (Navigation)*/
 main{
     width: calc(100vw - 150px);
@@ -77,6 +97,18 @@ main{
     float: left;
     background-color: #ededed;
     overflow-y:scroll;
+}
+
+/* Description */
+.flex-container.description{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul li{
+    display: inline;
 }
 
 /* All flex-container inside main */
@@ -380,8 +412,28 @@ i.fab.fa-android{
     height: 250px;
     width: 250px;
     object-fit: contain;
+    animation-name: up_down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    position: relative;
 }
 
+.top-phone{
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    position: relative;
+    right: 50%;
+    transform: translate(0%);
+}
+
+@keyframes up_down {
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(40deg); }
+    25% {transform: rotate(-40deg);}
+    100% { transform: rotate(0deg); }
+
+}
 /* .center-phone{
     width: 150px;
     height: 150px;
@@ -403,6 +455,50 @@ i.fab.fa-android{
     position: absolute;
 }  */
 
+/* social */
+.flex-container.social-sponsor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color:;
+}
+
+i.fab.fa-facebook,
+i.fab.fa-instagram,
+i.fab.fa-twitter,
+i.fab.fa-youtube{
+    font-size: 20px;
+}
+
+.social-sponsor,
+.marvel-studios{
+    padding-top: 30px;
+}
+
+.social-sponsor img,
+.social-sponsor i{
+    width:50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+.fa-facebook{
+    color:blue;
+}
+
+.fa-instagram{
+    color:orange;
+}
+
+.fa-twitter{
+    color: #00aced;
+}
+
+.fa-youtube{
+    color:red;
+}
 
 /* Footer */
 footer{
@@ -427,6 +523,26 @@ img.copertina{
 
 i.fas.fa-heart:hover{
     color: red;
+}
+
+i.fas.fa-red,
+i.fas.fa-pause-circle,
+i.fas.fa-play-circle,
+i.fas.fa-stop-circle,
+i.fas.fa-video-slash,
+i.fas.fa-podcast,
+i.fas.fa-volume-up{
+    font-size: 25px;;
+}
+
+i.fas.fa-redo:hover,
+i.fas.fa-pause-circle:hover,
+i.fas.fa-play-circle:hover,
+i.fas.fa-stop-circle:hover,
+i.fas.fa-video-slash:hover,
+i.fas.fa-podcast:hover,
+i.fas.fa-volume-up:hover{
+    color: #00e600;
 }
 
 a.load{

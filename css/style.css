@@ -31,8 +31,8 @@ aside{
 }
 
 #heroflix{
-    width: 67px;
-    height: 67px;
+    width: 68px;
+    height: 68px;
     object-fit: contain;
     position: absolute;
 }
@@ -41,7 +41,7 @@ h2{
     font-size: 16px;
     font-family: 'Bangers', cursive;
     position: relative;
-    margin-left: 10px;
+    margin-left: 4px;
     color: red;
     margin-bottom: 30px;
 }
@@ -58,7 +58,7 @@ header{
     width: calc(100vw - 150px);
     height: 50px;
     float: left;
-    background-color: #f2f2f2;
+    background-color: white;
 }
 
 .flex-container.heroflix{
@@ -78,14 +78,14 @@ header{
     color: black;
 }
 
-i.fas.fa-chevron-left:hover,
-i.fas.fa-chevron-right:hover{
+i.fas.fa-chevron-left:active,
+i.fas.fa-chevron-right:active{
     color: #00e600;
 }
 
 i.fas.fa-chevron-left,
 i.fas.fa-chevron-right{
-    font-size: 20px;
+    font-size: 25px;
 }
 
 i.fas.fa-user-circle:active{
@@ -97,7 +97,7 @@ main{
     width: calc(100vw - 150px);
     height: calc(100vh - 130px);
     float: left;
-    background-color: #ededed;
+    background-color: #f2f2f2;
     overflow-y:scroll;
 }
 
@@ -107,12 +107,33 @@ main{
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    padding-top: 30px;
 }
 
 ul li{
     display: inline;
     font-family: 'Montserrat', sans-serif;
+    padding-left: 20px;
+    text-decoration: none;
 }
+
+ul li:active{
+    text-decoration: none;
+}
+
+a.new:active > i.fas.fa-angle-down{
+    color: green;
+}
+
+i.fas.fa-angle-down{
+    display:inline-table;
+}
+
+li:active > i.fas.fa-angle-down{
+    display: inline-table;
+}
+
+
 
 /* All flex-container inside main */
 .flex-container.iron-man,
@@ -215,10 +236,10 @@ p{
 .thor-the-dark-world,
 .thor-ragnarok{
     position: relative;
+    /* border-radius: 10px; */
     box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-    border: .2px solid grey;
-    padding: 20px 0 20px;
+    border: 1px solid grey;
+    padding: 20px 10px 20px;
 }
 
 .thor-1,
@@ -231,7 +252,7 @@ p{
 .thor-the-dark-world:hover .overlay,
 .thor-ragnarok:hover .overlay {
   opacity: 0.5;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Captain America */
@@ -239,10 +260,10 @@ p{
 .captain-america-the-winter-soldier,
 .captain-america-civil-war{
     position: relative;
+    /* border-radius: 10px; */
     box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-    border: .2px solid grey;
-    padding: 20px 0 20px;
+    border: 1px solid grey;
+    padding: 20px 10px 20px;
 }
 
 .captain-america-1,
@@ -255,32 +276,32 @@ p{
 .captain-america-the-winter-soldier:hover .overlay,
 .captain-america-civil-war:hover .overlay {
   opacity: 0.5;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Black Panther */
 .black-panther{
     position: relative;
+    /* border-radius: 10px; */
     box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-    border: .2px solid grey;
-    padding: 20px 0 20px;
+    border: 1px solid grey;
+    padding: 20px 10px 20px;
 }
 
 /* Overlay black-panther */
 .black-panther:hover .overlay{
   opacity: 0.5;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Guardians-of-Galaxy */
 .guardians-of-galaxy-1,
 .guardians-of-galaxy-2{
     position: relative;
+    /* border-radius: 10px; */
     box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-    border: .2px solid grey;
-    padding: 20px 0 20px;
+    border: 1px solid grey;
+    padding: 20px 10px 20px;
 }
 
 .guardians-of-galaxy-1{
@@ -291,22 +312,22 @@ p{
 .guardians-of-galaxy-1:hover .overlay,
 .guardians-of-galaxy-2:hover .overlay{
   opacity: 0.5;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Doctori Strange */
 .doctor-strange-1{
     position: relative;
+    /* border-radius: 10px; */
     box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-    border: .2px solid grey;
-    padding: 20px 0 20px;
+    border: 1px solid grey;
+    padding: 20px 10px 20px;
 }
 
 /* Overlay doctor-strange */
 .doctor-strange:hover .overlay{
   opacity: 0.5;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Avengers */
@@ -315,10 +336,10 @@ p{
 .avengers-infinity-war,
 .avengers-end-game{
     position: relative;
+    /* border-radius: 10px; */
     box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-    border: .2px solid grey;
-    padding: 20px 0 20px;
+    border: 1px solid grey;
+    padding: 20px 10px 20px;
 }
 
 .avengers-1,
@@ -333,7 +354,7 @@ p{
 .avengers-infinity-war:hover .overlay,
 .avengers-end-game:hover .overlay{
   opacity: 0.5;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Coming-soon */
@@ -426,15 +447,12 @@ i.fab.fa-android{
     height: 250px;
     width: 250px;
     object-fit: contain;
-    animation-name: up_down;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    position: relative;
+    position: relative
 }
 
-.top-phone{
-    width: 80px;
-    height: 80px;
+img.spiderman{
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     position: relative;
     right: 50%;
@@ -444,10 +462,10 @@ i.fab.fa-android{
     animation-iteration-count: infinite;
 }
 
-@keyframes up_down {
+@keyframes spider {
 	0% { transform: rotate(0deg); }
-	50% { transform: rotate(40deg); }
-    25% {transform: rotate(-40deg);}
+	50% { transform: rotate(20deg); }
+    25% {transform: rotate(-20deg);}
     100% { transform: rotate(0deg); }
 
 }
@@ -472,7 +490,30 @@ i.fab.fa-android{
     position: absolute;
 }  */
 
-/* social */
+/* Subscribe */
+.flex-container.access{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+}
+img.spiderman{
+    height: 150px;
+    width: 150px;
+    animation-name: spider;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes spider {
+	0% { transform: rotate(0deg); }
+	50% { transform: rotate(20deg); }
+    25% {transform: rotate(-20deg);}
+    100% { transform: rotate(0deg); }
+
+}
+
+/* Social */
 .flex-container.social-sponsor{
     display: flex;
     flex-direction: row;
@@ -550,7 +591,8 @@ i.fas.fa-stop-circle,
 i.fas.fa-video-slash,
 i.fas.fa-podcast,
 i.fas.fa-volume-up{
-    font-size: 25px;;
+    font-size: 25px;
+    margin-right:20px;
 }
 
 i.fas.fa-redo:hover,
@@ -569,17 +611,29 @@ i.fas.fa-stop-circle:active{
     font-size: 40px;
 }
 
-a.load{
+/* i.fas.fa-play-circle:active > #line{
+
+}  */
+
+#line{
+    border: 3px solid white;
+    border-radius: 5px;
     width: 300px;
-    border: 1px solid white;
-    animation-name: load 3s infinite;
+    animation-name: load;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes load {
-    from{left: 0px;}
-    to {left: 50%}
+    0%   {right: 0px;}
+    100% {right: 300px; border-color: yellow;}
 }
 
+#line2{
+    border: 3px solid green;
+    border-radius: 5px;
+    width: 100px;
+}
 
 /* {
     animation-name: volume 3s infinite;

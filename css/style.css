@@ -32,9 +32,10 @@ aside.left{
     object-fit: contain;
     margin-bottom: 20px;
 }
+
 /* Header (Search)*/
 header{
-    width: calc(100vw - 300px);
+    width: calc(100vw - 150px);
     height: 60px;
     float: left;
     background-color: #f2f2f2;
@@ -71,17 +72,17 @@ h2{
     color: red;
 }
 
-/* Aside right (navbar)*/
-aside.right{
+
+/* aside.right{
     height: calc(100vh - 80px);
     width: 150px;
     float: right;
     background-color:#e6e6e6;
-}
+} */
 
 /* Main (Navigation)*/
 main{
-    width: calc(100vw - 300px);
+    width: calc(100vw - 150px);
     height: calc(100vh - 140px);
     float: left;
     display: flex;
@@ -99,17 +100,16 @@ main{
 .flex-container.captain-america,
 .flex-container.black-panther,
 .flex-container.guardians-of-galaxy,
-.flex-container.avengers{
+.flex-container.avengers,
+.flex-container.doctor-strange{
     display: flex;
     text-align: center;
-    padding-bottom: 50px;
-    margin:20px;
+    padding-bottom: 30px;
+    margin: 50px;
 }
 
-/* Iron-man */
-.flex-container.iron-man{
-    padding: 50px 0 50px;
-    margin:20px;
+h5{
+    font-weight: bolder;
 }
 
 .image{
@@ -117,13 +117,7 @@ main{
     height: 150px;
     object-fit: contain;
 }
-
-.iron-man-1,
-.iron-man-2,
-.iron-man-3{
-    position: relative;
-}
-
+/* Overlay all div */
 .overlay {
   position: absolute;
   top: 0;
@@ -137,13 +131,6 @@ main{
   background-color: black;
 }
 
-.iron-man-1:hover .overlay,
-.iron-man-2:hover .overlay,
-.iron-man-3:hover .overlay {
-  opacity: 0.5;
-  border-radius: 30px;
-}
-
 .icon {
   color: white;
   font-size: 100px;
@@ -155,43 +142,175 @@ main{
   text-align: center;
 }
 
+.icon:hover{
+    color: white;
+}
+
 .fa-user:hover {
   color: #eee;
 }
 
-.bk--red:hover{
-    /* background-image: linear-gradient(to bottom right,  #ff4d4d, #ffff80) */
+/* Iron-man */
+.flex-container.iron-man{
+    padding: 50px 0 50px;
+}
+
+.iron-man-1,
+.iron-man-2,
+.iron-man-3{
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    border: .2px solid grey;
+    padding: 20px 0 20px;
+}
+
+.iron-man-1,
+.iron-man-2{
+    margin-right: 50px;
+}
+
+/* Overlay Iron-man */
+.iron-man-1:hover .overlay,
+.iron-man-2:hover .overlay,
+.iron-man-3:hover .overlay {
+  opacity: 0.5;
+  border-radius: 10px;
 }
 
 /* Thor */
+.thor-1,
+.thor-the-dark-world,
+.thor-ragnarok{
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    border: .2px solid grey;
+    padding: 20px 0 20px;
+}
 
-.bk--grey:hover{
-    /* background-color: #f1f1f1; */
+.thor-1,
+.thor-the-dark-world{
+    margin-right: 50px;
+}
+
+/* Overlay thor */
+.thor-1:hover .overlay,
+.thor-the-dark-world:hover .overlay,
+.thor-ragnarok:hover .overlay {
+  opacity: 0.5;
+  border-radius: 10px;
 }
 
 /* Captain America */
+.captain-america-1,
+.captain-america-the-winter-soldier,
+.captain-america-civil-war{
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    border: .2px solid grey;
+    padding: 20px 0 20px;
+}
 
-.bk--blue:hover{
-    /* background-image: linear-gradient(to bottom right, #66b3ff, white, #ff8080) */
+.captain-america-1,
+.captain-america-the-winter-soldier{
+    margin-right: 50px;
+}
+
+/* Overlay captain-americca */
+.captain-america-1:hover .overlay,
+.captain-america-the-winter-soldier:hover .overlay,
+.captain-america-civil-war:hover .overlay {
+  opacity: 0.5;
+  border-radius: 10px;
 }
 
 /* Black Panther */
+.black-panther{
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    border: .2px solid grey;
+    padding: 20px 0 20px;
+}
 
+/* Overlay black-panther */
+.black-panther:hover .overlay{
+  opacity: 0.5;
+  border-radius: 10px;
+}
 
 /* Guardians-of-Galaxy */
+.guardians-of-galaxy-1,
+.guardians-of-galaxy-2{
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    border: .2px solid grey;
+    padding: 20px 0 20px;
+}
 
+.guardians-of-galaxy-1{
+    margin-right: 50px;
+}
+
+/* Overlay guardians-of-galaxy */
+.guardians-of-galaxy-1:hover .overlay,
+.guardians-of-galaxy-2:hover .overlay{
+  opacity: 0.5;
+  border-radius: 10px;
+}
+
+/* Doctori Strange */
+.doctor-strange-1{
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    border: .2px solid grey;
+    padding: 20px 0 20px;
+}
+
+/* Overlay doctor-strange */
+.doctor-strange:hover .overlay{
+  opacity: 0.5;
+  border-radius: 10px;
+}
 
 /* Avengers */
+.avengers-1,
+.avengers-age-of-ultron,
+.avengers-infinity-war,
+.avengers-end-game{
+    position: relative;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 10px;
+    border: .2px solid grey;
+    padding: 20px 0 20px;
+}
 
+.avengers-1,
+.avengers-age-of-ultron,
+.avengers-infinity-war{
+    margin-right: 50px;
+}
+
+/* Overlay doctor-strange */
+.avengers-1:hover .overlay,
+.avengers-age-of-ultron:hover .overlay,
+.avengers-infinity-war:hover .overlay,
+.avengers-end-game:hover .overlay{
+  opacity: 0.5;
+  border-radius: 10px;
+}
 
 /* Coming-soon */
 section.marvel-studios{
     display: flex;
     flex-wrap: wrap;
     background-color: black;
-    width: calc(100vw - 300px);
+    width: calc(100vw - 150px);
     height: 370px;
-    border-radius: 20px;
 }
 
 .top-section{
@@ -225,6 +344,21 @@ section.marvel-studios{
 h4{
     font-family: 'Bangers', cursive;
     text-align: center;
+}
+
+img.freccia{
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    position: relative;
+    animation-name: swipe;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes swipe {
+    from{left: 0px;}
+    to {left: 50%}
 }
 
 .coming-soon-image img{
@@ -307,9 +441,9 @@ i.fas.fa-heart:hover{
     color: red;
 }
 
-hr.load{
+a.load{
     width: 300px;
-    border: 3px solid white;
+    border: 1px solid white;
     animation-name: load 3s infinite;
 }
 

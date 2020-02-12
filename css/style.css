@@ -5,18 +5,19 @@
 }
 
 /* Aside Marvel (navbar)*/
-aside.left{
+aside{
     height: calc(100vh - 80px);
     width: 150px;
     background-color: #e6e6e6;
     float: left;
 }
 
-.flex-container.marvel{
+.flex-container.navigation{
+    height: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;
 }
 
 .heroflix-logo{
@@ -29,10 +30,6 @@ aside.left{
     align-items: center;
 }
 
-.aside-bottom{
-    display: flex;
-    align-items: flex-end;
-}
 #heroflix{
     width: 67px;
     height: 67px;
@@ -103,12 +100,13 @@ main{
 .flex-container.description{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
 
 ul li{
     display: inline;
+    font-family: 'Montserrat', sans-serif;
 }
 
 /* All flex-container inside main */
@@ -127,8 +125,12 @@ ul li{
 
 h5{
     font-weight: bolder;
+    font-family: 'Bangers', cursive;
 }
 
+p{
+    font-family: font-family: 'Montserrat', sans-serif;
+}
 .image{
     width: 150px;
     height: 150px;
@@ -425,6 +427,9 @@ i.fab.fa-android{
     position: relative;
     right: 50%;
     transform: translate(0%);
+    animation-name: up_down;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes up_down {
@@ -556,17 +561,21 @@ a.load{
     to {left: 50%}
 }
 
-{
+i.fas.fa-play-circle:active{
+    font-size: 40px;
+}
+
+/* {
     animation-name: volume 3s infinite;
 }
 
 @keyframes volume {
 
-}
+} */
 
 /* @Media */
 @media screen and (max-width: 768px){
-    aside.left{
+    aside{
         width: 50px;
     }
 
@@ -594,7 +603,7 @@ a.load{
     /* Main */
     main{
         width: calc(100vw - 50px);
-        height: calc(100vh - 130px);
+        height: calc(100vh - 110px);
     }
 
     .flex-container.iron-man,
@@ -651,6 +660,23 @@ a.load{
 
     /* Footer */
     footer{
+        height: 60px;
+    }
+
+    img.copertina{
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+    }
+
+    i.fas.fa-red,
+    i.fas.fa-pause-circle,
+    i.fas.fa-play-circle,
+    i.fas.fa-stop-circle,
+    i.fas.fa-video-slash,
+    i.fas.fa-podcast,
+    i.fas.fa-volume-up{
+        font-size: 15px;;
     }
 }
 

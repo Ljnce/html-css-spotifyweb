@@ -43,6 +43,7 @@ h2{
     position: relative;
     margin-left: 10px;
     color: red;
+    margin-bottom: 30px;
 }
 
 #icon{
@@ -85,6 +86,10 @@ i.fas.fa-chevron-right:hover{
 i.fas.fa-chevron-left,
 i.fas.fa-chevron-right{
     font-size: 20px;
+}
+
+i.fas.fa-user-circle:active{
+    color: #00e600;
 }
 
 /* Main (Navigation)*/
@@ -131,6 +136,7 @@ h5{
 p{
     font-family: font-family: 'Montserrat', sans-serif;
 }
+
 .image{
     width: 150px;
     height: 150px;
@@ -179,10 +185,10 @@ p{
 .iron-man-2,
 .iron-man-3{
     position: relative;
+    /* border-radius: 10px; */
     box-shadow: 10px 10px 5px grey;
-    border-radius: 10px;
-    border: .2px solid grey;
-    padding: 20px 0 20px;
+    border: 1px solid grey;
+    padding: 20px 10px 20px;
 }
 
 .iron-man-1,
@@ -190,12 +196,18 @@ p{
     margin-right: 50px;
 }
 
+.iron-man-1:hover,
+.iron-man-2:hover,
+.iron-man-3:hover{
+
+}
+
 /* Overlay Iron-man */
 .iron-man-1:hover .overlay,
 .iron-man-2:hover .overlay,
 .iron-man-3:hover .overlay {
   opacity: 0.5;
-  border-radius: 10px;
+  /* border-radius: 10px; */
 }
 
 /* Thor */
@@ -526,8 +538,9 @@ img.copertina{
     object-fit: contain;
 }
 
-i.fas.fa-heart:hover{
+i.fas.fa-heart:active{
     color: red;
+    font-size: 20px;
 }
 
 i.fas.fa-red,
@@ -550,6 +563,12 @@ i.fas.fa-volume-up:hover{
     color: #00e600;
 }
 
+i.fas.fa-pause-circle:active,
+i.fas.fa-play-circle:active,
+i.fas.fa-stop-circle:active{
+    font-size: 40px;
+}
+
 a.load{
     width: 300px;
     border: 1px solid white;
@@ -561,9 +580,6 @@ a.load{
     to {left: 50%}
 }
 
-i.fas.fa-play-circle:active{
-    font-size: 40px;
-}
 
 /* {
     animation-name: volume 3s infinite;
@@ -577,6 +593,7 @@ i.fas.fa-play-circle:active{
 @media screen and (max-width: 768px){
     aside{
         width: 50px;
+        height: calc(100vh - 60px);
     }
 
     #heroflix{
@@ -591,8 +608,12 @@ i.fas.fa-play-circle:active{
         font-size: 10px;
         font-family: 'Bangers', cursive;
         position: relative;
-        margin-left: 6px;
+        margin-left: 3px;
         color: red;
+    }
+
+    small{
+        display: none;
     }
 
     /* Header */
@@ -639,6 +660,7 @@ i.fas.fa-play-circle:active{
     .avengers-infinity-war,
     .avengers-end-game{
         margin: 0 auto;
+        margin-bottom: 20px;
     }
     /* Coming-soon */
     section.marvel-studios{

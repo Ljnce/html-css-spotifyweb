@@ -718,14 +718,14 @@ small.love-iron-man{
 
 .load-bar{
     position: absolute;
-    bottom:37px;
+    bottom:33px;
     left:300px;
     background: red;
     width: 10px;
     height: 6px;
     border-radius: 5px;
     animation-name: load;
-    animation-duration: 25s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
 }
 
@@ -738,8 +738,8 @@ small.love-iron-man{
 }
 
 @keyframes load {
-    0%   {left: 625px;}
-    100% {left: 910px; border-color: yellow;}
+    0%   {left: 400px;}
+    100% {left: 705px;}
 }
 
 small.timer-start{
@@ -754,8 +754,34 @@ small.timer-end{
     margin-top: 3px;
 }
 
+.load-bar-vol{
+    position: absolute;
+    background: red;
+    bottom:21px;
+    width: 8px;
+    height: 7px;
+    border-radius: 5px;
+    animation-name: load-vol;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#line-vol{
+    height: 5px;
+    border-radius: 5px;
+    width: 50px;
+    background-color: white;
+    margin-top: 10px;
+}
+
+@keyframes load-vol {
+    0%   {left: 940px;}
+    100% {left: 990px;}
+}
+
 
 /* @Media */
+/* Max 768 */
 @media screen and (max-width: 768px){
     aside{
         width: 50px;
@@ -919,7 +945,28 @@ small.timer-end{
         color: #00e600;
     }
 
-    .load-bar{
+    .load-bar,
+    .load-bar-vol{
+        display: none;
+    }
+
+    #line{
+        position: relative;
+        height: 5px;
+        border-radius: 5px;
+        width: 50px;
+        background-color: white;
+    }
+
+    #line-vol{
+        height: 5px;
+        border-radius: 5px;
+        width: 50px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    /* .load-bar{
         bottom:37px;
         left:200px;
         background: red;
@@ -943,53 +990,181 @@ small.timer-end{
         0%   {left: 300px;}
         100% {left: 340px;}
     }
+
+    .load-bar-vol{
+        position: absolute;
+        background: red;
+        top:10px;
+        width: 8px;
+        height: 7px;
+        border-radius: 5px;
+        animation-name: load-vol;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    #line-vol{
+        height: 5px;
+        border-radius: 5px;
+        width: 50px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    @keyframes load-vol {
+        0%   {left: 1267px;}
+        100% {left: 1308px;}
+    } */
 }
 
+/* Min 768 */
 @media screen and (min-width: 768px){
-    /* Head */
-    ul li{
-        padding-left: 20px;
-    }
-
-    /* App */
-    .download{
-        margin-bottom: 20px;
-        margin-left:20px;
-    }
-/*
-    .flex-container.avengers{
-        margin-left: 15px;
-    } */
-
     /* Footer */
-    @keyframes yup {
-        from{left: 300px;}
-        to {left: 0px;}
+    i.fas.fa-red,
+    i.fas.fa-pause-circle,
+    i.fas.fa-play-circle,
+    i.fas.fa-stop-circle,
+    i.fas.fa-video-slash,
+    i.fas.fa-podcast,
+    i.fas.fa-volume-up{
+        font-size: 13px;
+        margin-right: 5px;
     }
 
-    /* .load-bar{
+    .load-bar{
         position: absolute;
-        bottom:37px;
-        left:200px;
+        bottom:33px;
+        left:300px;
         background: red;
         width: 10px;
         height: 6px;
         border-radius: 5px;
-        animation-name: load-s;
-        animation-duration: 30s;
+        animation-name: load;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
     }
 
-    @keyframes load-s {
-        0%   {left: 900px;}
-        100% {left:700px;}
-    } */
+    #line{
+        height: 5px;
+        border-radius: 5px;
+        width: 300px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    @keyframes load {
+        0%   {left: 295px;}
+        100% {left: 595px;}
+    }
+
+    small.timer-start{
+        font-family: 'Montserrat', sans-serif;
+        margin-right: 15px;
+        margin-top: 3px;
+    }
+
+    small.timer-end{
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 15px;
+        margin-top: 3px;
+    }
+
+    .load-bar-vol{
+        position: absolute;
+        background: red;
+        bottom:21px;
+        width: 8px;
+        height: 7px;
+        border-radius: 5px;
+        animation-name: load-vol;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    #line-vol{
+        height: 5px;
+        border-radius: 5px;
+        width: 50px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    @keyframes load-vol {
+        0%   {left: 720px;}
+        100% {left: 760px;}
+    }
+
 }
 
+/* Min 992 */
 @media screen and (min-width: 992px){
+    /* Footer */
+    .load-bar{
+        position: absolute;
+        bottom:33px;
+        left:300px;
+        background: red;
+        width: 10px;
+        height: 6px;
+        border-radius: 5px;
+        animation-name: load;
+        animation-duration: 20s;
+        animation-iteration-count: infinite;
+    }
+
+    #line{
+        height: 5px;
+        border-radius: 5px;
+        width: 300px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    @keyframes load {
+        0%   {left: 425px;}
+        100% {left: 715px;}
+    }
+
+    small.timer-start{
+        font-family: 'Montserrat', sans-serif;
+        margin-right: 15px;
+        margin-top: 3px;
+    }
+
+    small.timer-end{
+        font-family: 'Montserrat', sans-serif;
+        margin-left: 15px;
+        margin-top: 3px;
+    }
+
+    .load-bar-vol{
+        position: absolute;
+        background: red;
+        bottom:21px;
+        width: 8px;
+        height: 7px;
+        border-radius: 5px;
+        animation-name: load-vol;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    #line-vol{
+        height: 5px;
+        border-radius: 5px;
+        width: 50px;
+        background-color: white;
+        margin-top: 10px;
+    }
+
+    @keyframes load-vol {
+        0%   {left: 940px;}
+        100% {left: 990px;}
+    }
 
 }
 
+/* Max 992 */
 @media screen and (max-width: 992px){
 
 }

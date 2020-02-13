@@ -160,7 +160,7 @@ ul li:active{
 }
 
 i.fas.fa-angle-down{
-    display:inline-table;
+
     font-size: 15px;
 }
 
@@ -168,7 +168,22 @@ li:active > i.fas.fa-angle-down{
     display: inline-table;
 }
 
+img.spiderman{
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    padding-top: 20px;
+    animation-name: spider;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
 
+@keyframes spider {
+	0% { transform: rotate(0deg);}
+	50% { transform: rotate(20deg);}
+    25% {transform: rotate(-20deg);}
+    100% { transform: rotate(0deg);}
+}
 
 /* All flex-container inside main */
 .flex-container.iron-man,
@@ -425,7 +440,7 @@ p{
 }
 
 /* Coming-soon */
-section.marvel-studios{
+.marvel-studios{
     display: flex;
     flex-wrap: wrap;
     background-color: black;
@@ -492,9 +507,9 @@ i.fas.fa-angle-double-right{
     margin: 0 20px;
 }
 
-/* Slide photo */
+/* Slide DC */
 #slider{
-    margin-top: 100px;
+    margin-top: 50px;
     margin-bottom: 100px;
 }
 
@@ -505,6 +520,16 @@ i.fas.fa-angle-double-right{
     color: white;
 }
 
+#slider img.dc-universe{
+    width: 70px;
+    height: 70px;
+    object-fit: contain;
+    position: relative;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    margin-top: 60px;
+}
 
 @keyframes slidy {
 0% { left: 0%; }
@@ -518,7 +543,6 @@ i.fas.fa-angle-double-right{
 100% { left: -400%; }
 }
 
-body { margin: 0; }
 div#slider { overflow: hidden; }
 div#slider figure img { width: 20%; float: left; }
 div#slider figure {
@@ -528,7 +552,7 @@ div#slider figure {
   left: 0;
   text-align: left;
   font-size: 0;
-  animation: 30s slidy infinite;
+  animation: 25s slidy infinite;
 }
 
 #slider img{
@@ -548,6 +572,9 @@ div#slider figure {
     padding-bottom: 10px;
     width: calc(100vw - 150px);
     color:white;
+    border: 1px solid #8c8c8c;
+    border-style: solid hidden solid hidden;
+
 }
 
 h3{
@@ -559,26 +586,7 @@ i.fab.fa-apple,
 i.fas.fa-robot,
 i.fab.fa-linux{
     font-size: 40px;
-}
-
-img.spiderman{
-    width: 100px;
-    height: 100px;
-    object-fit: contain;
-    position: relative;
-    right:50%;
-    margin-bottom: 75px;
-    animation-name: spider;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes spider {
-	0% { transform: rotate(0deg);}
-	50% { transform: rotate(20deg);}
-    25% {transform: rotate(-20deg);}
-    100% { transform: rotate(0deg);}
-
+    color: white;
 }
 
 i.far.fa-hand-point-left{
@@ -704,7 +712,7 @@ i.fas.fa-stop-circle:active,
 i.fas.fas-video-slash:active,
 i.fas.fa-podcast:active,
 i.fas.fa-volume-up:active{
-    font-size: 30px;
+    font-size: 28px;
 }
 
 i.fas.fa-play-circle:active > .load-bar,
@@ -742,6 +750,7 @@ small.love-iron-man{
     0%   {left: 642px;}
     100% {left: 932px; border-color: yellow;}
 }
+
 small.timer-start{
     font-family: 'Montserrat', sans-serif;
     margin-right: 15px;

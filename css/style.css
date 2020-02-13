@@ -696,16 +696,6 @@ i.fas.fa-volume-up{
     margin-right:20px;
 }
 
-i.fas.fa-redo:hover,
-i.fas.fa-pause-circle:hover,
-i.fas.fa-play-circle:hover,
-i.fas.fa-stop-circle:hover,
-i.fas.fa-video-slash:hover,
-i.fas.fa-podcast:hover,
-i.fas.fa-volume-up:hover{
-    color: #00e600;
-}
-
 i.fas.fa-pause-circle:active,
 i.fas.fa-play-circle:active,
 i.fas.fa-stop-circle:active,
@@ -713,6 +703,7 @@ i.fas.fas-video-slash:active,
 i.fas.fa-podcast:active,
 i.fas.fa-volume-up:active{
     font-size: 28px;
+    color: #00e600;
 }
 
 i.fas.fa-play-circle:active > .load-bar,
@@ -734,7 +725,7 @@ small.love-iron-man{
     height: 6px;
     border-radius: 5px;
     animation-name: load;
-    animation-duration: 30s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 
@@ -747,8 +738,8 @@ small.love-iron-man{
 }
 
 @keyframes load {
-    0%   {left: 642px;}
-    100% {left: 932px; border-color: yellow;}
+    0%   {left: 625px;}
+    100% {left: 910px; border-color: yellow;}
 }
 
 small.timer-start{
@@ -795,7 +786,7 @@ small.timer-end{
     }
 
     #line-user,
-    small{
+    small.user{
         display: none;
     }
 
@@ -817,7 +808,11 @@ small.timer-end{
     }
 
     ul li{
-        padding-left: 30px;
+        padding-left: 25px;
+    }
+
+    img.spiderman{
+        margin-left: 100px;
     }
 
     .flex-container.iron-man,
@@ -857,7 +852,7 @@ small.timer-end{
     }
 
     /* Coming-soon */
-    section.marvel-studios{
+    .marvel-studios{
         width: calc(100vw - 50px);
         height: 370px;
     }
@@ -890,9 +885,11 @@ small.timer-end{
     .phone{
         display: none;
     }
+
     /* Footer */
     footer{
         height: 60px;
+        font-size: 10px;
     }
 
     img.copertina{
@@ -908,11 +905,21 @@ small.timer-end{
     i.fas.fa-video-slash,
     i.fas.fa-podcast,
     i.fas.fa-volume-up{
-        font-size: 15px;;
+        font-size: 15px;
+        margin-right: 10px;
+    }
+
+    i.fas.fa-pause-circle:active,
+    i.fas.fa-play-circle:active,
+    i.fas.fa-stop-circle:active,
+    i.fas.fas-video-slash:active,
+    i.fas.fa-podcast:active,
+    i.fas.fa-volume-up:active{
+        font-size: 18px;
+        color: #00e600;
     }
 
     .load-bar{
-        position: absolute;
         bottom:37px;
         left:200px;
         background: red;
@@ -920,42 +927,41 @@ small.timer-end{
         height: 6px;
         border-radius: 5px;
         animation-name: load-xs;
-        animation-duration: 30s;
+        animation-duration: 10s;
         animation-iteration-count: infinite;
     }
 
     #line{
+        position: relative;
         height: 5px;
         border-radius: 5px;
         width: 50px;
         background-color: white;
-        margin-bottom: 10px;
     }
 
     @keyframes load-xs {
-        0%   {left: 230px;}
-        100% {left: 270px;}
+        0%   {left: 300px;}
+        100% {left: 340px;}
     }
 }
 
 @media screen and (min-width: 768px){
+    /* Head */
     ul li{
         padding-left: 20px;
     }
 
+    /* App */
     .download{
         margin-bottom: 20px;
         margin-left:20px;
-    }
-
-    .phone{
-        display: none;
     }
 /*
     .flex-container.avengers{
         margin-left: 15px;
     } */
 
+    /* Footer */
     @keyframes yup {
         from{left: 300px;}
         to {left: 0px;}
@@ -981,13 +987,9 @@ small.timer-end{
 }
 
 @media screen and (min-width: 992px){
-    i.far.fa-hand-point-down{
-        display: none;
-    }
+
 }
 
 @media screen and (max-width: 992px){
-    i.far.fa-hand-point-down{
-        display: none;
-    }
+
 }

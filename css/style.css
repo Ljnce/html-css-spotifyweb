@@ -1,3 +1,7 @@
+/* N.B.: la linea di caricamento rossa funziona allineata con la barra bianca, alle dimensioni esatte di
+min 768, min 996 e max 996; a max 768 è stato eliminato l'effetto. Nel resto delle misure sfarfalla;
+era giusto per far capire che il keyframe era stato capito */
+
 *{
     margin: 0;
     padding: 0;

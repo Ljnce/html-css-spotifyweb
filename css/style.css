@@ -53,6 +53,25 @@ h2{
     margin-bottom: 10px;
 }
 
+i.fas.fa-user-circle{
+    font-size: 15px;
+    padding-bottom: 10px;
+    color: white;
+}
+
+#line-user{
+    height: 1px;
+    border-radius: 5px;
+    width: 130px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+
+small.user{
+    margin-left: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* Header (Search)*/
 header{
     width: calc(100vw - 150px);
@@ -70,11 +89,16 @@ header{
     padding-top: 10px;
 }
 
-.btn{
+i.fas.fa-chevron-left,
+i.fas.fa-chevron-right{
+    color: white;
+}
+
+input{
     border: 1px solid black;
     height: 30px;
-    width: 100px;
-    border-radius: 20px;
+    width: 120px;
+    border-radius: 10px;
     color: black;
     font-family: 'Montserrat', sans-serif;
     background-color: white;
@@ -502,13 +526,6 @@ i.fab.fa-linux{
     font-size: 40px;
 }
 
-.iphone{
-    height: 400px;
-    width: 400px;
-    object-fit: contain;
-    position: relative;
-}
-
 img.spiderman{
     width: 100px;
     height: 100px;
@@ -543,50 +560,6 @@ i.far.fa-hand-point-left{
     to {left: 0px;}
 }
 
-/* .center-phone{
-    width: 150px;
-    height: 150px;
-    object-fit: contain;
-    position: relative;
-}
-
-.top-phone{
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
-    position: absolute;
-}
-
-.bottom-phone{
-    width: 104px;
-    height: 104px;
-    object-fit: contain;
-    position: absolute;
-}  */
-
-/* Subscribe */
-/* .flex-container.access{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-}
-img.spiderman{
-    height: 150px;
-    width: 150px;
-    animation-name: spider;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes spider {
-	0% { transform: rotate(0deg); }
-	50% { transform: rotate(20deg); }
-    25% {transform: rotate(-20deg);}
-    100% { transform: rotate(0deg); }
-
-} */
-
 /* Social */
 .flex-container.social-sponsor{
     display: flex;
@@ -595,6 +568,7 @@ img.spiderman{
     align-items: center;
     height: 30px;
     background-color:;
+    padding-top: 100px;
 }
 
 i.fab.fa-facebook,
@@ -644,10 +618,10 @@ footer{
 }
 
 .flex-container.footer{
+    height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
 }
 
 img.copertina{
@@ -695,40 +669,55 @@ i.fas.fa-stop-circle:active,
 i.fas.fas-video-slash:active,
 i.fas.fa-podcast:active,
 i.fas.fa-volume-up:active{
-    font-size: 40px;
+    font-size: 30px;
 }
 
-/* i.fas.fa-play-circle:active > #line{
+i.fas.fa-play-circle:active > .load-bar,
+i.fas.fa-stop-circle:active > .load-bar,
+i.fas.fa-pause-circle:active > .load-bar{
+    background-color: green;
+}
 
-}  */
+small.love-iron-man{
+    font-family: 'Montserrat', sans-serif;
+}
 
-#line{
-    border: 3px solid white;
+.load-bar{
+    position: absolute;
+    bottom:37px;
+    left:300px;
+    background: red;
+    width: 10px;
+    height: 6px;
     border-radius: 5px;
-    width: 300px;
     animation-name: load;
-    animation-duration: 5s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
 }
 
-@keyframes load {
-    0%   {left: 0px;}
-    100% {left: 100px; border-color: yellow;}
-}
-
-#line2{
-    border: 3px solid green;
+#line{
+    height: 5px;
     border-radius: 5px;
-    width: 100px;
+    width: 300px;
+    background-color: white;
+    margin-top: 10px;
 }
 
-/* {
-    animation-name: volume 3s infinite;
+@keyframes load {
+    0%   {left: 642px;}
+    100% {left: 932px; border-color: yellow;}
+}
+small.timer-start{
+    font-family: 'Montserrat', sans-serif;
+    margin-right: 15px;
+    margin-top: 3px;
 }
 
-@keyframes volume {
-
-} */
+small.timer-end{
+    font-family: 'Montserrat', sans-serif;
+    margin-left: 15px;
+    margin-top: 3px;
+}
 
 /* @Media */
 @media screen and (max-width: 768px){
@@ -760,6 +749,7 @@ i.fas.fa-volume-up:active{
         color: red;
     }
 
+    #line-user,
     small{
         display: none;
     }
@@ -876,10 +866,30 @@ i.fas.fa-volume-up:active{
         font-size: 15px;;
     }
 
-    #line{
-        border: 3px solid white;
+    .load-bar{
+        position: absolute;
+        bottom:37px;
+        left:200px;
+        background: red;
+        width: 10px;
+        height: 6px;
         border-radius: 5px;
-        width: 100px;
+        animation-name: load-xs;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+
+    #line{
+        height: 5px;
+        border-radius: 5px;
+        width: 50px;
+        background-color: white;
+        margin-bottom: 10px;
+    }
+
+    @keyframes load-xs {
+        0%   {left: 230px;}
+        100% {left: 270px;}
     }
 }
 
@@ -896,14 +906,33 @@ i.fas.fa-volume-up:active{
     .phone{
         display: none;
     }
-
+/*
     .flex-container.avengers{
         margin-left: 15px;
-    }
+    } */
 
     @keyframes yup {
         from{left: 300px;}
         to {left: 0px;}
+    }
+
+    /* .load-bar{
+        position: absolute;
+        bottom:37px;
+        left:200px;
+        background: red;
+        width: 10px;
+        height: 6px;
+        border-radius: 5px;
+        animation-name: load-s;
+        animation-duration: 30s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes load-s {
+        0%   {left: 900px;}
+        100% {left:700px;}
+    } */
 }
 
 @media screen and (min-width: 992px){

@@ -209,6 +209,29 @@ img.spiderman{
     margin: 50px;
 }
 
+/* .iron-man-1,
+.iron-man-2,
+.iron-man-3,
+.thor-1,
+.thor-the-dark-world,
+.thor-ragnarok,
+.captain-america-1,
+.captain-america-the-winter-soldier,
+.captain-america-civil-war,
+.black-panther,
+.guardians-of-galaxy-1,
+.guardians-of-galaxy-2,
+.doctor-strange-1,
+.avengers-1,
+.avengers-age-of-ultron,
+.avengers-infinity-war,
+.avengers-end-game{
+    * / Volendo si poteva usare il ridimensionamento per accostarle, ma ho preferito lasciarne una ad una per
+    perchè sembrava più "carino" visivamente!
+    /* flex:0 0 25%;
+    height: 500px; */
+}
+
 h5{
     font-weight: bolder;
     font-family: 'Bangers', cursive;
@@ -889,6 +912,10 @@ small.timer-end{
     .avengers-end-game{
         margin: 0 auto;
         margin-bottom: 20px;
+        /* Volendo si poteva usare il ridimensionamento per accostarle, ma ho preferito lasciarne una ad una per
+        perchè sembrava più "carino" visivamente in modalità xs! */
+        /* flex:0 0 25%;
+        height: 500px; */
     }
 
     /* Coming-soon */

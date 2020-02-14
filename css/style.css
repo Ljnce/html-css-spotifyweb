@@ -777,7 +777,7 @@ small.love-iron-man{
     height: 6px;
     border-radius: 5px;
     animation-name: load;
-    animation-duration: 5s;
+    animation-duration: 25s;
     animation-iteration-count: infinite;
 }
 
@@ -1010,6 +1010,11 @@ small.timer-end{
         border-radius: 5px;
         width: 50px;
         background-color: white;
+    }
+
+    .load-bar{
+        animation-duration: 10s;
+
     }
 
     @keyframes load {

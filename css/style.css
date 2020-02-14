@@ -57,6 +57,12 @@ h2{
     margin-bottom: 10px;
 }
 
+.aside-top span{
+    color: white;
+    font-size: 10px;
+    padding-bottom: 5px;
+}
+
 i.fas.fa-user-circle{
     font-size: 15px;
     padding-bottom: 10px;
@@ -813,6 +819,10 @@ small.timer-end{
         position: relative;
         margin-left: 3px;
         color: red;
+    }
+
+    .aside-top span{
+        display: none;
     }
 
     #line-user,

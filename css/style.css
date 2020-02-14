@@ -51,16 +51,15 @@ h2{
 }
 
 #icon{
-    width:50px;
-    height: 50px;
+    width:40px;
+    height: 40px;
     object-fit: contain;
-    margin-bottom: 10px;
 }
 
 .aside-top span{
     color: white;
     font-size: 10px;
-    padding-bottom: 5px;
+    padding-bottom: 15px;
 }
 
 i.fas.fa-user-circle{
@@ -161,8 +160,9 @@ ul li{
     color: white;
 }
 
+ul li:hover,
 ul li:active{
-    text-decoration: none;
+    border-bottom: 1px solid black;
 }
 
 .list:hover > i.fas.fa-angle-down{
@@ -867,7 +867,7 @@ small.timer-end{
         flex-wrap: wrap;
         justify-content: center;
         align-items: center;
-        padding-top: 0:
+        padding-top: 0;
     }
 
     .iron-man-1,

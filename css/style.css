@@ -1,7 +1,3 @@
-/* N.B.: la linea di caricamento rossa funziona allineata con la barra bianca, alle dimensioni esatte di
-min 768, min 996 e max 996; a max 768 è stato eliminato l'effetto. Nel resto delle misure sfarfalla;
-era giusto per far capire che il keyframe era stato capito */
-
 *{
     margin: 0;
     padding: 0;
@@ -749,7 +745,7 @@ small.love-iron-man{
     font-family: 'Montserrat', sans-serif;
 }
 
-.load-bar{
+/* .load-bar{
     position: absolute;
     bottom:33px;
     left:300px;
@@ -768,11 +764,33 @@ small.love-iron-man{
     width: 300px;
     background-color: white;
     margin-top: 10px;
+} */
+
+.timer{
+    position: relative;
+}
+
+.load-bar{
+    position: absolute;
+    background: red;
+    width: 10px;
+    height: 6px;
+    border-radius: 5px;
+    animation-name: load;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+#line{
+    height: 5px;
+    border-radius: 5px;
+    width: 300px;
+    background-color: white;
 }
 
 @keyframes load {
-    0%   {left: 400px;}
-    100% {left: 705px;}
+    0%   {left: 0;}
+    100% {left:96%;}
 }
 
 small.timer-start{
@@ -790,7 +808,6 @@ small.timer-end{
 .load-bar-vol{
     position: absolute;
     background: red;
-    bottom:21px;
     width: 8px;
     height: 7px;
     border-radius: 5px;
@@ -804,12 +821,13 @@ small.timer-end{
     border-radius: 5px;
     width: 50px;
     background-color: white;
-    margin-top: 10px;
+    margin-right: 20px;
+
 }
 
 @keyframes load-vol {
-    0%   {left: 940px;}
-    100% {left: 990px;}
+    0%   {left: 0;}
+    100% {left: 60%;}
 }
 
 
@@ -986,17 +1004,17 @@ small.timer-end{
         color: #00e600;
     }
 
-    .load-bar,
-    .load-bar-vol{
-        display: none;
-    }
 
     #line{
-        position: relative;
         height: 5px;
         border-radius: 5px;
         width: 50px;
         background-color: white;
+    }
+
+    @keyframes load {
+        0%   {left: 0;}
+        100% {left:80%;}
     }
 
     #line-vol{
@@ -1007,55 +1025,6 @@ small.timer-end{
         margin-top: 10px;
     }
 
-    /* .load-bar{
-        bottom:37px;
-        left:200px;
-        background: red;
-        width: 10px;
-        height: 6px;
-        border-radius: 5px;
-        animation-name: load-xs;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-    }
-
-    #line{
-        position: relative;
-        height: 5px;
-        border-radius: 5px;
-        width: 50px;
-        background-color: white;
-    }
-
-    @keyframes load-xs {
-        0%   {left: 300px;}
-        100% {left: 340px;}
-    }
-
-    .load-bar-vol{
-        position: absolute;
-        background: red;
-        top:10px;
-        width: 8px;
-        height: 7px;
-        border-radius: 5px;
-        animation-name: load-vol;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-    }
-
-    #line-vol{
-        height: 5px;
-        border-radius: 5px;
-        width: 50px;
-        background-color: white;
-        margin-top: 10px;
-    }
-
-    @keyframes load-vol {
-        0%   {left: 1267px;}
-        100% {left: 1308px;}
-    } */
 }
 
 /* Min 768 */
@@ -1072,32 +1041,6 @@ small.timer-end{
         margin-right: 5px;
     }
 
-    .load-bar{
-        position: absolute;
-        bottom:33px;
-        left:300px;
-        background: red;
-        width: 10px;
-        height: 6px;
-        border-radius: 5px;
-        animation-name: load;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-    }
-
-    #line{
-        height: 5px;
-        border-radius: 5px;
-        width: 300px;
-        background-color: white;
-        margin-top: 10px;
-    }
-
-    @keyframes load {
-        0%   {left: 295px;}
-        100% {left: 595px;}
-    }
-
     small.timer-start{
         font-family: 'Montserrat', sans-serif;
         margin-right: 15px;
@@ -1109,63 +1052,11 @@ small.timer-end{
         margin-left: 15px;
         margin-top: 3px;
     }
-
-    .load-bar-vol{
-        position: absolute;
-        background: red;
-        bottom:21px;
-        width: 8px;
-        height: 7px;
-        border-radius: 5px;
-        animation-name: load-vol;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-    }
-
-    #line-vol{
-        height: 5px;
-        border-radius: 5px;
-        width: 50px;
-        background-color: white;
-        margin-top: 10px;
-    }
-
-    @keyframes load-vol {
-        0%   {left: 720px;}
-        100% {left: 760px;}
-    }
-
 }
 
 /* Min 992 */
 @media screen and (min-width: 992px){
     /* Footer */
-    .load-bar{
-        position: absolute;
-        bottom:33px;
-        left:300px;
-        background: red;
-        width: 10px;
-        height: 6px;
-        border-radius: 5px;
-        animation-name: load;
-        animation-duration: 20s;
-        animation-iteration-count: infinite;
-    }
-
-    #line{
-        height: 5px;
-        border-radius: 5px;
-        width: 300px;
-        background-color: white;
-        margin-top: 10px;
-    }
-
-    @keyframes load {
-        0%   {left: 425px;}
-        100% {left: 715px;}
-    }
-
     small.timer-start{
         font-family: 'Montserrat', sans-serif;
         margin-right: 15px;
@@ -1176,31 +1067,6 @@ small.timer-end{
         font-family: 'Montserrat', sans-serif;
         margin-left: 15px;
         margin-top: 3px;
-    }
-
-    .load-bar-vol{
-        position: absolute;
-        background: red;
-        bottom:21px;
-        width: 8px;
-        height: 7px;
-        border-radius: 5px;
-        animation-name: load-vol;
-        animation-duration: 5s;
-        animation-iteration-count: infinite;
-    }
-
-    #line-vol{
-        height: 5px;
-        border-radius: 5px;
-        width: 50px;
-        background-color: white;
-        margin-top: 10px;
-    }
-
-    @keyframes load-vol {
-        0%   {left: 940px;}
-        100% {left: 990px;}
     }
 
 }
